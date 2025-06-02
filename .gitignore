@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SorteadorDeTimes
+**/obj/
+/obj/
+/bin/
+/backend/Properties
+*.user
+/backend/Properties/launchSettings.json
+appsettings.Development.json
+/.vs/ProjectEvaluation
+/backend/bin/Debug/net8.0
