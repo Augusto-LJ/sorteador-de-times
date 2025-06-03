@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SorteadorDeTimes</name>
+    </assembly>
+    <members>
+        <member name="M:SorteadorDeTimes.Controllers.TimeController.SortearTime(System.Collections.Generic.List{SorteadorDeTimes.Models.Jogador})">
+            <summary>
+            Sorteia e balanceia os times
+            </summary>
+            <returns>Lista de times já sorteados e balanceados</returns>
+        </member>
+        <member name="P:SorteadorDeTimes.Models.Jogador.Nome">
+            <summary>
+            Nome do jogador, do mesmo jeito que foi cadastrado
+            </summary>
+            <example>Augusto Lima Jardim</example>
+        </member>
+        <member name="P:SorteadorDeTimes.Models.Jogador.NivelHabilidade">
+            <summary>
+            Nível de habilidade. Deve ser um número decimal de 1 a 10
+            </summary>
+            <example>8.5</example>
+        </member>
+        <member name="P:SorteadorDeTimes.Models.Jogador.Funcao">
+            <summary>
+            Função que o jogador exerce. Deve ser uma das opções: goleiro, zagueiro, lateral, meio, atacante
+            </summary>
+            <example>Atacante</example>
+        </member>
+    </members>
+</doc>
