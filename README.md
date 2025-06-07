@@ -3,8 +3,8 @@
 Uma aplicação que tem como objetivo sortear equipes de futebol de forma equilibrada e seguindo parâmetros selecionáveis, bem como registrar os resultados das partidas. Perfeito para organizar a sua pelada com os amigos!
 
 Ciclo de vida de desenvolvimento de software ([SDLC](https://aws.amazon.com/pt/what-is/sdlc/), ou Software Development Life Cycle) da aplicação:
-- 🛠️ <strong>Planejamento</strong> (em andamento)
-- 🔜 Projeto 
+- ✅ Planejamento
+- 🛠️ <strong>Projeto</strong> (em andamento)
 - 🔜 Implementação 
 - 🔜 Teste
 - 🔜 Implantação
