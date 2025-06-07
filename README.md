@@ -32,7 +32,8 @@ A preencher
 - O usuário deve se autenticar no sistema
 - O usuário cria um grupo para sua pelada
 - Dentro do grupo, pode adicionar jogadores, cadastrando informações básicas como: nome, posição e nível de habilidade
-- Para começar a partida, o usuário selecina os jogadores que participarão e pede para o sistema sortear os times
+- Para começar a partida, o usuário selecina os jogadores que participarão e a quantidade de jogadores em cada time
+- Com isso, o usuário pede para o sistema sortear os times
 - O sistema devolve dois times (A e B) balanceados de acordo com as posições de cada jogador e o nível de habilidade
 
 ## 🔜 Futuras melhorias
