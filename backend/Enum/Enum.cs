@@ -2,10 +2,10 @@
 {
     public enum Enum_Funcoes
     {
-        goleiro = 1,
-        zagueiro = 2,
-        lateral = 3,
-        meio = 4,
-        atacante = 5
+        Goleiro = 1,
+        Zagueiro = 2,
+        Lateral = 3,
+        Meio = 4,
+        Atacante = 5
     }
 }

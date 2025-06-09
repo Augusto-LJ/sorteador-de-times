@@ -1,11 +1,13 @@
-﻿namespace SorteadorDeTimes.Models
+﻿using SorteadorDeTimes.Enum;
+
+namespace SorteadorDeTimes.Models
 {
     public class Jogador
     {
         /// <summary>
         /// Nome do jogador, do mesmo jeito que foi cadastrado
         /// </summary>
-        /// <example>Augusto Lima Jardim</example>
+        /// <example>Jogador 01</example>
         public string Nome { get; set; }
 
         /// <summary>
@@ -15,9 +17,9 @@
         public double NivelHabilidade { get; set; }
 
         /// <summary>
-        /// Função que o jogador exerce. Deve ser uma das opções: goleiro, zagueiro, lateral, meio, atacante
+        /// Função que o jogador exerce. Deve ser uma das opções: Goleiro (1), Zagueiro (2), Lateral (3), Meio (4), Atacante (5)
         /// </summary>
-        /// <example>Atacante</example>
-        public string Funcao { get; set; }
+        /// <example>Enum.Enum_Funcoes.Atacante</example>
+        public Enum_Funcoes Funcao { get; set; }
     }
 }

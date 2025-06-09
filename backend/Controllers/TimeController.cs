@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SorteadorDeTimes.Models;
+using SorteadorDeTimes.Services;
 
 namespace SorteadorDeTimes.Controllers
 {
@@ -13,9 +14,11 @@ namespace SorteadorDeTimes.Controllers
         /// <returns>Lista de times já sorteados e balanceados</returns>
         [HttpPost("SortearTime")]
         [ProducesResponseType(typeof(IEnumerable<List<Jogador>>), StatusCodes.Status200OK)]
-        public IActionResult SortearTime(List<Jogador> listaJogadores)
+        public IActionResult SortearTime(List<Jogador> listaJogadores, int tamanhoDeCadaTime, bool vaiRevesarNoGol)
         {
-            return Ok(listaJogadores);
+            var timesSorteados = new TimeService().SortearTime(listaJogadores, tamanhoDeCadaTime, vaiRevesarNoGol);
+
+            return Ok(timesSorteados);
         }
     }
 }

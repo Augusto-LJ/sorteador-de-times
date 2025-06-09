@@ -4,7 +4,7 @@
         <name>SorteadorDeTimes</name>
     </assembly>
     <members>
-        <member name="M:SorteadorDeTimes.Controllers.TimeController.SortearTime(System.Collections.Generic.List{SorteadorDeTimes.Models.Jogador})">
+        <member name="M:SorteadorDeTimes.Controllers.TimeController.SortearTime(System.Collections.Generic.List{SorteadorDeTimes.Models.Jogador},System.Int32,System.Boolean)">
             <summary>
             Sorteia e balanceia os times
             </summary>
@@ -14,7 +14,7 @@
             <summary>
             Nome do jogador, do mesmo jeito que foi cadastrado
             </summary>
-            <example>Augusto Lima Jardim</example>
+            <example>Jogador 01</example>
         </member>
         <member name="P:SorteadorDeTimes.Models.Jogador.NivelHabilidade">
             <summary>
@@ -24,9 +24,9 @@
         </member>
         <member name="P:SorteadorDeTimes.Models.Jogador.Funcao">
             <summary>
-            Função que o jogador exerce. Deve ser uma das opções: goleiro, zagueiro, lateral, meio, atacante
+            Função que o jogador exerce. Deve ser uma das opções: Goleiro (1), Zagueiro (2), Lateral (3), Meio (4), Atacante (5)
             </summary>
-            <example>Atacante</example>
+            <example>Enum.Enum_Funcoes.Atacante</example>
         </member>
     </members>
 </doc>
