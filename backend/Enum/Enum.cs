@@ -1,4 +1,6 @@
-﻿namespace SorteadorDeTimes.Enum
+﻿using System.ComponentModel;
+
+namespace SorteadorDeTimes.Enum
 {
     public enum Enum_Funcoes
     {

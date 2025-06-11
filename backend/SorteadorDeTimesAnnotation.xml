@@ -4,7 +4,7 @@
         <name>SorteadorDeTimes</name>
     </assembly>
     <members>
-        <member name="M:SorteadorDeTimes.Controllers.TimeController.SortearTime(System.Collections.Generic.List{SorteadorDeTimes.Models.Jogador},System.Int32,System.Boolean)">
+        <member name="M:SorteadorDeTimes.Controllers.TimeController.SortearTime(SorteadorDeTimes.Models.SortearTimeRequest)">
             <summary>
             Sorteia e balanceia os times
             </summary>
@@ -27,6 +27,23 @@
             Função que o jogador exerce. Deve ser uma das opções: Goleiro (1), Zagueiro (2), Lateral (3), Meio (4), Atacante (5)
             </summary>
             <example>Enum.Enum_Funcoes.Atacante</example>
+        </member>
+        <member name="P:SorteadorDeTimes.Models.SortearTimeRequest.TamanhoDeCadaTime">
+            <summary>
+            Quantidade de jogadores que cada time deve ter. Deve ser maior ou igual a 6.
+            </summary>
+            <example>5</example>
+        </member>
+        <member name="P:SorteadorDeTimes.Models.SortearTimeRequest.ListaJogadores">
+            <summary>
+            Lista de jogadores que devem ser distribuídos nos times. Deve ser maior ou igual a 12.
+            </summary>
+        </member>
+        <member name="P:SorteadorDeTimes.Models.SortearTimeRequest.VaiRevesarNoGol">
+            <summary>
+            Define se os jogadores da linha vão revezar no gol. Deve ser false se o goleiro for fixo.
+            </summary>
+            <example>true</example>
         </member>
     </members>
 </doc>

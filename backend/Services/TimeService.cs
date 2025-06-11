@@ -9,11 +9,17 @@ namespace SorteadorDeTimes.Services
         List<Jogador> jogadoresSobrando = [];
 
         public TimeService() { }
-        public List<Time> SortearTime(List<Jogador> listaJogadores, int tamanhoDeCadaTime, bool vaiRevesarNoGol)
-        {
-            var jogadoresPorFuncao = SepararJogadoresPorFuncao(listaJogadores);
 
-            DefinirGoleiros(jogadoresPorFuncao.Goleiros, vaiRevesarNoGol);
+        public bool DadosRequestSaoInvalidos(SortearTimeRequest request)
+        {
+            return request.TamanhoDeCadaTime < 6 || request.ListaJogadores.Count < 12;
+        }
+
+        public List<Time> SortearTime(SortearTimeRequest request)
+        {
+            var jogadoresPorFuncao = SepararJogadoresPorFuncao(request.ListaJogadores);
+
+            DefinirGoleiros(jogadoresPorFuncao.Goleiros, request.VaiRevezarNoGol);
 
             // Apenas separa um para cada, a princípio só para igualar a quantidade
             ColocarPorFuncaoUmJogadorParaCadaTime(jogadoresPorFuncao.Zagueiros);

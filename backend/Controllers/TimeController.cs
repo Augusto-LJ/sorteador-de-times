@@ -14,9 +14,15 @@ namespace SorteadorDeTimes.Controllers
         /// <returns>Lista de times já sorteados e balanceados</returns>
         [HttpPost("SortearTime")]
         [ProducesResponseType(typeof(IEnumerable<List<Jogador>>), StatusCodes.Status200OK)]
-        public IActionResult SortearTime(List<Jogador> listaJogadores, int tamanhoDeCadaTime, bool vaiRevesarNoGol)
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        public IActionResult SortearTime(SortearTimeRequest request)
         {
-            var timesSorteados = new TimeService().SortearTime(listaJogadores, tamanhoDeCadaTime, vaiRevesarNoGol);
+            TimeService timeService = new();
+
+            if (timeService.DadosRequestSaoInvalidos(request))
+                return BadRequest("Dados da requisição inválidos");
+
+            var timesSorteados = timeService.SortearTime(request);
 
             return Ok(timesSorteados);
         }
