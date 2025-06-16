@@ -12,7 +12,14 @@ namespace SorteadorDeTimes.Services
 
         public bool DadosRequestSaoInvalidos(SortearTimeRequest request)
         {
-            return request.TamanhoDeCadaTime < 6 || request.ListaJogadores.Count < 12;
+            // Deve aceitar apenas times de 6 ou 7 jogadores
+            if (request.TamanhoDeCadaTime < 6 || request.TamanhoDeCadaTime > 7)
+                return true;
+            
+            if (request.TamanhoDeCadaTime == 6)
+                return request.ListaJogadores.Count < 12;
+
+            return request.ListaJogadores.Count < 14;
         }
 
         public List<Time> SortearTime(SortearTimeRequest request)
