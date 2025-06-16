@@ -4,8 +4,8 @@ Uma aplicação que tem como objetivo sortear equipes de futebol de forma equili
 
 Ciclo de vida de desenvolvimento de software ([SDLC](https://aws.amazon.com/pt/what-is/sdlc/), ou Software Development Life Cycle) da aplicação:
 - ✅ Planejamento
-- 🛠️ <strong>Projeto</strong> (em andamento)
-- 🔜 Implementação 
+- ✅ Projeto
+- 🛠️ <strong>Implementação</strong> (em andamento)
 - 🔜 Teste
 - 🔜 Implantação
 - 🔜 Manutenção
