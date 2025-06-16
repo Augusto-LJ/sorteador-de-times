@@ -1,6 +1,6 @@
 # ⚽ Sorteador de times
 
-Uma aplicação que tem como objetivo sortear equipes de futebol de forma equilibrada e seguindo parâmetros selecionáveis, bem como registrar os resultados das partidas. Perfeito para organizar a sua pelada com os amigos!
+Uma aplicação que tem como objetivo sortear equipes de futebol society de forma equilibrada e seguindo parâmetros selecionáveis, bem como registrar os resultados das partidas. Perfeito para organizar a sua pelada com os amigos!
 
 Ciclo de vida de desenvolvimento de software ([SDLC](https://aws.amazon.com/pt/what-is/sdlc/), ou Software Development Life Cycle) da aplicação:
 - ✅ Planejamento
@@ -32,7 +32,7 @@ A preencher
 - O usuário deve se autenticar no sistema
 - O usuário cria um grupo para sua pelada
 - Dentro do grupo, pode adicionar jogadores, cadastrando informações básicas como: nome, posição e nível de habilidade
-- Para começar a partida, o usuário selecina os jogadores que participarão e a quantidade de jogadores em cada time
+- Para começar a partida, o usuário selecina os jogadores que participarão e a quantidade de jogadores em cada time. Esta quantidade deve ser 6 ou 7 (considerando que é futebol society)
 - Com isso, o usuário pede para o sistema sortear os times
 - O sistema devolve dois times (A e B) balanceados de acordo com as posições de cada jogador e o nível de habilidade
 
